@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/ll_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/my_app_logo"
+            android:contentDescription="@string/my_app_icon" />
+
+        <TextView
+            android:id="@+id/heading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <!-- Number of Sets -->
+    <TextView
+        android:id="@+id/numberOfSets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/number_of_sets"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/number_of_sets"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/enter_number_of_sets"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hintColor"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Workout duration -->
+    <TextView
+        android:id="@+id/workoutDurationLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/workout_duration_seconds"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/workout_duration_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/enter_time_seconds"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hintColor"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Rest duration -->
+    <TextView
+        android:id="@+id/restDurationLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rest_duration_seconds"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/rest_duration_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="number"
+        android:textColorHint="@color/hintColor"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:hint="@string/enter_time_seconds"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Timer -->
+    <TextView
+        android:id="@+id/timer_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/timer"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:progress="0"
+        android:max="100"
+        android:visibility="visible"
+        android:progressTint="@color/black"
+        android:layout_marginBottom="16dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"/>
+
+    <TextView
+        android:id="@+id/time_remaining_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textSize="64sp"
+        android:textColor="@android:color/black"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/start_stop_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:shadowColor="@color/black"
+        android:textColor="@android:color/white"
+        android:padding="16dp"/>
+</LinearLayout>
